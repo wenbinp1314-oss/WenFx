@@ -1,0 +1,6 @@
+.idea/
+__pycache__/
+Script/checkpoint/
+data/
+*.jpg
+*.pth
