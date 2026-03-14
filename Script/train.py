@@ -78,7 +78,7 @@ for epoch in range(EPOCHS):
         gp = compute_gradient_penalty(netF, target_img, fake_img)
 
         # 判别器总损失 [cite: 191]
-        loss_F = torch.mean(perception_fake) - torch.mean(perception_real) + 10 * gp
+        loss_F = torch.mean(perception_fake) - torch.mean(perception_real) + GP_LAMBDA * gp
 
         loss_F.backward()
         optimizerF.step()

@@ -17,6 +17,9 @@ LAMBDA_REC = 10     # 重构损失权重 lambda1 [cite: 239]
 LAMBDA_CONT = 1     # 内容损失权重 lambda2 [cite: 239]
 LAMBDA_INFO = 10    # 互信息损失权重 lambda3 [cite: 239]
 
+# WGAN-GP 梯度惩罚权重（论文设定 K=1）
+GP_LAMBDA = 1
+
 # 药剂相关
 REAGENT_DIM = 6     # 6种药剂：黑药, 硫酸铜, 黄药, 2号油, 硝酸铅 [cite: 227]
 
