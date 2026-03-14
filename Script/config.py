@@ -17,6 +17,10 @@ LAMBDA_REC = 10     # 重构损失权重 lambda1 [cite: 239]
 LAMBDA_CONT = 1     # 内容损失权重 lambda2 [cite: 239]
 LAMBDA_INFO = 10    # 互信息损失权重 lambda3 [cite: 239]
 
+# WGAN-GP 梯度惩罚外层系数 λ（与 ||grad|| 的目标 K=1 独立）
+# 经验与原始 WGAN-GP 默认常用 10，避免默认正则强度被意外缩小
+GP_LAMBDA = 10
+
 # 药剂相关
 REAGENT_DIM = 6     # 6种药剂：黑药, 硫酸铜, 黄药, 2号油, 硝酸铅 [cite: 227]
 
